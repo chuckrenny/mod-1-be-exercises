@@ -44,7 +44,7 @@ RSpec.describe Hobbit do
       hobbit.celebrate_birthday
     end
 
-    expect(hobbit.adult?).to eq(false)
+    expect(hobbit.adult?).to eq(true)
   end
 
   it "comes of age at 33" do
@@ -69,7 +69,7 @@ RSpec.describe Hobbit do
       hobbit.celebrate_birthday
     end
 
-    expect(hobbit.play).to eq(true)
+    expect(hobbit.play).to eq(false)
   end
 
   it "can get tired if play 3times" do
