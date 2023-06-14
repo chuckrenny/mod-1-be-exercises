@@ -1,6 +1,6 @@
 class Painter
 
-  attr_reader :name
+  attr_reader :name, :paints
 
   def initialize(name)
     @name = name
