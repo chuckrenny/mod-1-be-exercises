@@ -29,14 +29,14 @@ class Bag
 
         @contains
     end      
+
+    def <<(candy)
+        @candies << candy
+    end
+
+    def remove
+        @candies.pop()
+    end
       
 end
 
-class Candy
-    attr_accessor :candy, :type
-
-    def initialize(candy, type)
-        @candy = candy
-        @type = type
-    end
-end

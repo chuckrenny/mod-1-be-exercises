@@ -1,5 +1,5 @@
-class Candy 
-    attr_reader :type
+class Candy
+    attr_accessor :type
 
     def initialize(type)
         @type = type
