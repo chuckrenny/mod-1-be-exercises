@@ -14,7 +14,7 @@ RSpec.describe AmazonOrder do
   end
 
   it 'can return a delivery message' do
-    expect(@order.delivery).to eq("Your order will arrive in 2 business days.")
+    expect(@order.delivery).to eq("Your order will arrive soon.")
   end
 
   it 'can return a review request' do
