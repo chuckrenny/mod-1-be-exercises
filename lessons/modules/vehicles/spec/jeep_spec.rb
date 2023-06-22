@@ -20,4 +20,12 @@ RSpec.describe Jeep do
   it 'can drive' do
     expect(@jeep.drive).to eq("All wheels go!")
   end
+
+  it 'can turn ac on' do
+    expect(@jeep.turn_ac_on).to eq("Chilly air coming your way!")
+  end
+
+  it 'can turn ac off' do
+    expect(@jeep.turn_ac_off).to eq("Temp is fine in here.")
+  end
 end

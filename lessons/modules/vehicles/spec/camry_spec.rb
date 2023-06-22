@@ -20,4 +20,12 @@ RSpec.describe Camry do
   it 'can drive' do
     expect(@camry.drive).to eq("Back wheels go!")
   end
+
+  it 'can turn ac on' do
+    expect(@camry.turn_ac_on).to eq("Chilly air coming your way!")
+  end
+
+  it 'can turn ac off' do
+    expect(@camry.turn_ac_off).to eq("Temp is fine in here.")
+  end
 end

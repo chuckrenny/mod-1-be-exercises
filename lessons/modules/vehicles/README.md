@@ -29,6 +29,7 @@ Tests:
 
 * Now that `stop` and `start` are extracted to the module, add back in a `start` or `stop` method in one of your class. Have it return the string **"WAIIIIIIIT"**.
 * What happens when you run this method? Why?
+# Method start in camry.rb takes priority over the module engine method start 
 
 ## Summary
 * Can you create a `Vehicle` module that holds both engine and AC functionality?
