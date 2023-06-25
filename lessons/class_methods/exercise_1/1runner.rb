@@ -16,5 +16,8 @@ puts max.woof
 ## Un-comment the line of code below, does it work? Why or why not?
 #Dog.bark
 # No as we did not specify the object we're calling it on.
+
 # It should be max.bark
+# puts max.bark 
+# 'Max goes Bark!'
 
