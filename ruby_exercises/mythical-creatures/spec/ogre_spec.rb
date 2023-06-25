@@ -78,8 +78,9 @@ RSpec.describe Ogre do
     human = Human.new
 
     6.times { ogre.encounter(human) }
-
+    # should this be human.encounter_counter == 6?
     expect(ogre.encounter_counter).to eq(6)
+
     expect(ogre.swings).to eq(2)
     expect(human.knocked_out?).to be true
   end

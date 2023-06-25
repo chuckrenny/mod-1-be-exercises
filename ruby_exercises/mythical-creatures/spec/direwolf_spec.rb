@@ -74,6 +74,7 @@ RSpec.describe Direwolf do
 
     summer_wolf.protects(sansa_stark)
     summer_wolf.protects(jon_stark)
+
     lady_wolf.protects(rob_stark)
     lady_wolf.protects(bran_stark)
     lady_wolf.protects(arya_stark)
@@ -136,12 +137,14 @@ RSpec.describe Direwolf do
   it 'returns the Stark object when it leaves' do
     summer_wolf = Direwolf.new('Summer', "Winterfell")
     lady_wolf = Direwolf.new('Lady', "Winterfell")
+
     sansa_stark = Stark.new('Sansa')
     arya_stark = Stark.new('Arya')
     rickon_stark = Stark.new('Rickon')
 
     summer_wolf.protects(arya_stark)
     lady_wolf.protects(sansa_stark)
+    
     summer_wolf.leaves(arya_stark)
 
     expected = lady_wolf.leaves(rickon_stark)
