@@ -36,5 +36,10 @@ After your `Circle` tests are passing, refactor it to inherit from the `Shape` c
 #### Keep in mind...
 Some questions to answer before starting:
 - Does a `Circle` need to be able to use `area` and `perimeter`?
+// No
+
 - Are there any methods or attributes you created in `Circle` that can be moved "up" to `Shape`? Why or why not?
+// None, as radius isn't applicable to every shape. Same goes for the methods circumference and updated area. 
+
 - Does using inheritance make sense in this example? Why/Why not?
+// Probably not as we don't use any parent variables (besides color, thats negligible)
