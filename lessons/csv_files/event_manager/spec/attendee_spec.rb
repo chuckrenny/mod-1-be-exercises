@@ -2,7 +2,7 @@ require 'pry'
 require 'rspec'
 require './lib/attendee'
 
-describe Attendee do
+RSpec.describe Attendee do
   before :each do
     @person_1 = Attendee.new(1, "Allison", "Nguyen", "20010")
     @person_2 = Attendee.new(4, "David", "Thomas", "7306")
@@ -32,9 +32,9 @@ describe Attendee do
   end
 
   it 'has a valid zip code' do
-    expect(@person_1.zipcode).to eq "20010"
-    expect(@person_2.zipcode).to eq "07306"
-    expect(@person_3.zipcode).to eq "00000"
-    expect(@person_4.zipcode).to eq "21230"
+    expect(@person_1.clean_zip).to eq "20010"
+    expect(@person_2.clean_zip).to eq "07306"
+    expect(@person_3.clean_zip).to eq "00000"
+    expect(@person_4.clean_zip).to eq "21230"
   end
 end
