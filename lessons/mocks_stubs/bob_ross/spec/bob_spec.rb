@@ -20,8 +20,10 @@ RSpec.describe Bob do
   describe 'Methods' do
     it 'can add paint' do
       bob = Bob.new
-      paint_1 = Paint.new("Alizarin Crimson")
-      paint_2 = Paint.new("Van Dyke Brown")
+      # paint_1 = Paint.new("Alizarin Crimson")
+      # paint_2 = Paint.new("Van Dyke Brown")
+      paint_1 = double('first paint')  # mock
+      paint_2 = double('second paint') # mock
 
       bob.add_paint(paint_1)
       bob.add_paint(paint_2)
@@ -31,8 +33,14 @@ RSpec.describe Bob do
 
     it 'can return paint colors' do
       bob = Bob.new
-      paint_1 = Paint.new("Alizarin Crimson")
-      paint_2 = Paint.new("Van Dyke Brown")
+      # paint_1 = Paint.new("Alizarin Crimson")
+      # paint_2 = Paint.new("Van Dyke Brown")
+      paint_1 = double('first paint')  # mock
+      paint_2 = double('second paint') # mock
+  
+      allow(paint_1).to receive(:color).and_return('Alizarin Crimson') # stub
+      allow(paint_2).to receive(:color).and_return('Van Dyke Brown')   # stub
+
       bob.add_paint(paint_1)
       bob.add_paint(paint_2)
 
