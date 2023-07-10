@@ -1,5 +1,5 @@
 module FurnitureModule
-  def soft
-    "superclass's module"
-  end
+  def soft                  #6 
+    "superclass's module"   #6 
+  end                       #6 
 end
