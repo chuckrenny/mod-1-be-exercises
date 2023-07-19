@@ -11,12 +11,10 @@ class Groomer
         @customers << customer
     end
 
-    def find_outstanding_balances
-        balance = Hash.new
-        @customers.each do |customer|
-            balance[customer.name] = customer.outstanding_balance if customer.outstanding_balance > 0
+    def customers_with_oustanding_balances
+        @customers.find_all do |customer|
+          customer.outstanding_balance != 0
         end
-        balance
     end
 
     # def pet_count
