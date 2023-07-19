@@ -1,10 +1,12 @@
 class DayCare
   attr_reader :name,
-              :customers
+              :customers,
+              :feeding_prices
 
-  def initialize(name)
+  def initialize(name, feeding_prices)
     @name = name
     @customers = []
+    @feeding_prices = feeding_prices
   end
 
   def add_customer(customer)
