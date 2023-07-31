@@ -15,7 +15,7 @@ RSpec.describe Game do
     it 'can access attribtues in each game' do
       expect(@pick_4.name).to eq("Pick 4")
       expect(@pick_4.cost).to eq(2)
-      expect(@pick_4.national_drawing).to eq(false)
+      expect(@pick_4.national_drawing?).to eq(false)
       expect(@mega_millions.name).to eq("Mega Millions")
       expect(@mega_millions.cost).to eq(5)
       expect(@mega_millions.national_drawing).to eq(true)
